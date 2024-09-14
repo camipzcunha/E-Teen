@@ -1,13 +1,16 @@
 
 import './App.css'
-
-export default function App() {
+import React from 'react';
+import Header from './Components/Header';
+import Hero from './Components/Hero';
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-950">
-      Hello world!
-    </h1>
-  )
-}
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
+};
 
-
+export default App;
 

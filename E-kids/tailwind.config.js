@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        modak: ['Modak', 'sans-serif'],
+        quantico: ['Quantico', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
+      },
+      
+    },
   },
   plugins: [],
 }
+
