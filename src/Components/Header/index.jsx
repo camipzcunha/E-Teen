@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -11,22 +12,30 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       {/* Logo à esquerda */}
-      <h1 className="text-5xl font-modak ml-30">E-KIDS</h1>
+      <NavLink to='/'>
+        <h1 className="text-5xl font-modak ml-30">E-KIDS</h1>
+      </NavLink>
 
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden md:flex justify-center flex-1 space-x-3">
-        <li className="p-4 font-jost flex flex-col items-center">
-          <span className="material-symbols-outlined text-4xl">help_center</span>
-          SOBRE
-        </li>
-        <li className="p-4 font-jost flex flex-col items-center">
-          <span className="material-symbols-outlined text-4xl">stadia_controller</span>
-          GAMES
-        </li>
-        <li className="p-4 font-jost flex flex-col items-center">
-          <span className="material-symbols-outlined text-4xl">contacts</span>
-          CONTATO
-        </li>
+        <NavLink to='/Sobre'>
+          <li className="p-4 font-jost flex flex-col items-center">
+            <span className="material-symbols-outlined text-4xl">help_center</span>
+            SOBRE
+          </li>
+        </NavLink>
+        <NavLink to='/'>
+          <li className="p-4 font-jost flex flex-col items-center">
+            <span className="material-symbols-outlined text-4xl">stadia_controller</span>
+            GAMES
+          </li>
+        </NavLink>
+        <NavLink to='/'>
+          <li className="p-4 font-jost flex flex-col items-center">
+            <span className="material-symbols-outlined text-4xl">contacts</span>
+            CONTATO
+          </li>
+        </NavLink>
       </ul>
 
       {/* Botão "Entrar" à direita */}

@@ -1,13 +1,14 @@
-
 import './App.css'
-import React from 'react';
+import { Outlet } from 'react-router';
+
 import Header from './Components/Header';
-import Hero from './Components/Hero';
+
+
 const App = () => {
   return (
     <>
       <Header />
-      <Hero />
+      <Outlet/>
     </>
   );
 };
