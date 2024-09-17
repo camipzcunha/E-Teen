@@ -19,31 +19,31 @@ const Header = () => {
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden md:flex justify-center flex-1 space-x-3">
         <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44">
+            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
                 <span className="material-symbols-outlined text-4xl">book_5</span> 
                 GUIA
             </li>
         </NavLink>
         <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44">
+            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
                 <span className="material-symbols-outlined text-4xl">quiz</span>
                 QUIZZES
             </li>
         </NavLink>
         <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44">
+            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
                 <span className="material-symbols-outlined text-4xl">store</span>
                 LOJA
             </li>
         </NavLink>
         <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44">
+            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
                 <span className="material-symbols-outlined text-4xl">auto_stories</span>
                 MEU ÁLBUM
             </li>
         </NavLink>
         <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44">
+            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
                 <span className="material-symbols-outlined text-4xl">group</span> 
                 AMIGOS
             </li>

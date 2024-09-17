@@ -8,7 +8,6 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
 //import paginas
-import Sobre from './Paginas/Sobre/index.jsx'
 import HomePage from './Paginas/HomePage/index.jsx'
 import HomeLogin from './Paginas/HomeLogin/index.jsx'
 
@@ -19,7 +18,6 @@ const router = createBrowserRouter([
     element:<App/>,
     children:[
       {index:true, element:<HomePage/>},
-      {path:'/Sobre', element:<Sobre/>},
       {path: '/Home', element: <HomeLogin />}
     ]
   }

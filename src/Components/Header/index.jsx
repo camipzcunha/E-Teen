@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -18,20 +19,20 @@ const Header = () => {
 
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden md:flex justify-center flex-1 space-x-3">
-        <NavLink to='/Sobre'>
-          <li className="p-4 font-jost flex flex-col items-center text-branco44">
+        <NavLink to='/'>
+          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">help_center</span>
             SOBRE
           </li>
         </NavLink>
         <NavLink to='/'>
-          <li className="p-4 font-jost flex flex-col items-center text-branco44">
+          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">stadia_controller</span>
             GAMES
           </li>
         </NavLink>
         <NavLink to='/'>
-          <li className="p-4 font-jost flex flex-col items-center text-branco44">
+          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">contacts</span>
             CONTATO
           </li>
