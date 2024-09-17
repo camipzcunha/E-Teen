@@ -24,7 +24,7 @@ const Header = () => {
             SOBRE
           </li>
         </NavLink>
-        <NavLink to='/'>
+        <NavLink to='/Home'>
           <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">stadia_controller</span>
             GAMES
@@ -80,7 +80,7 @@ const Header = () => {
         }
       >
         <ul className="p-4 uppercase">
-        <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
+          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
             <span className="material-symbols-outlined text-4xl mr-3">help_center</span>
             SOBRE
           </li>

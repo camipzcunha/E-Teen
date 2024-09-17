@@ -45,7 +45,7 @@ export default function HomeLogin(){
         <>
             <HeaderLogin />
             <section className="cardsRedes" >
-                <Servicos dados={servicos} />
+                <Servicos servicos={servicos} />
             </section>
         </>
     )
