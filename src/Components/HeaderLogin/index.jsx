@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* Botão "Entrar" à direita */}
       <div className="hidden md:block">
-        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-6 py-2 rounded-md hover:bg-red-700  ">
+        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-6 py-2 rounded-md hover:bg-vermelho100-700  ">
           Entrar
         </button>
       </div>

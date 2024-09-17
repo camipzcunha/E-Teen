@@ -14,6 +14,8 @@ export default {
       branco100: "#fff",
       branco44: "#818181",
       vermelho100: '#F32626',
+      azul100: '#3790E1',
+      amarelo100: '#F4CD00'
     },
   },
   plugins: [],

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css'
 
 const Header = () => {
   const [nav, setNav] = useState(false);
