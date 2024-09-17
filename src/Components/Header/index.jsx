@@ -80,16 +80,16 @@ const Header = () => {
         }
       >
         <ul className="p-4 uppercase">
-          <li className="p-4 border-b border-gray-600 flex flex-col items-center">
-            <span className="material-symbols-outlined text-4xl">help_center</span>
+        <li className="p-5 border-b border-gray-600 flex flex-row items-center">
+            <span className="material-symbols-outlined text-4xl mr-3">help_center</span>
             SOBRE
           </li>
-          <li className="p-4 border-b border-gray-600 flex flex-col items-center">
-            <span className="material-symbols-outlined text-4xl">stadia_controller</span>
+          <li className="p-5 border-b border-gray-600 flex flex-row items-center">
+            <span className="material-symbols-outlined text-4xl mr-3">stadia_controller</span>
             GAMES
           </li>
-          <li className="p-4 flex flex-col items-center">
-            <span className="material-symbols-outlined text-4xl">contacts</span>
+          <li className="p-5  flex flex-row items-center">
+            <span className="material-symbols-outlined text-4xl mr-3">contacts</span>
             CONTATO
           </li>
         </ul>
