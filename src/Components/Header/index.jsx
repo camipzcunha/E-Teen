@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -12,46 +12,44 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-20 text-white">
       {/* Logo à esquerda */}
-      <NavLink to='/'>
+      <a href='/'>
         <h1 className="text-5xl font-modak ml-30 text-branco100">E-KIDS</h1>
-      </NavLink>
+      </a>
 
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden md:flex justify-center flex-1 space-x-3">
-        <NavLink to='/'>
+        <a href='/'>
           <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">help_center</span>
             SOBRE
           </li>
-        </NavLink>
-        <NavLink to='/'>
+        </a>
+        <a href='/'>
           <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">stadia_controller</span>
             GAMES
           </li>
-        </NavLink>
-        <NavLink to='/'>
+        </a>
+        <a href='/'>
           <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">contacts</span>
             CONTATO
           </li>
-        </NavLink>
+        </a>
       </ul>
 
-      {/* Botão "Entrar" à direita */}
+      {/* Link "Entrar" à direita para desktop */}
       <div className="hidden md:block">
-        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-6 py-2 rounded-md hover:bg-red-700  ">
+        <a
+          href='/login'
+          className="bg-vermelho100 text-branco100  hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-6 py-2 rounded-md hover:bg-red-700"
+        >
           Entrar
-        </button>
+        </a>
       </div>
 
       {/* Ícone do Menu Hambúrguer para mobile, à direita */}
       <div className="md:hidden flex items-center space-x-4 text-branco100">
-        {/* Botão "Entrar" para mobile */}
-        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-4 py-2 rounded-md">
-          Entrar
-        </button>
-
         {/* Menu hambúrguer */}
         <div onClick={handleClick}>
           <svg
@@ -80,7 +78,7 @@ const Header = () => {
         }
       >
         <ul className="p-4 uppercase">
-        <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
+          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
             <span className="material-symbols-outlined text-4xl mr-3">help_center</span>
             SOBRE
           </li>
@@ -88,9 +86,15 @@ const Header = () => {
             <span className="material-symbols-outlined text-4xl mr-3">stadia_controller</span>
             GAMES
           </li>
-          <li className="p-5  flex flex-row items-center text-branco44">
+          <li className="p-5 flex flex-row items-center text-branco44">
             <span className="material-symbols-outlined text-4xl mr-3">contacts</span>
             CONTATO
+          </li>
+          {/* Link "Entrar" dentro do menu lateral */}
+          <li className="p-5 flex flex-row items-center text-branco44">
+            <a href='/login' className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-4 py-2 rounded-md">
+              Entrar
+            </a>
           </li>
         </ul>
       </div>
