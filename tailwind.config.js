@@ -17,6 +17,10 @@ export default {
       azul100: '#3790E1',
       amarelo100: '#F4CD00'
     },
+    borderRadius: {
+      'none': '0',
+      DEFAULT: '24px',
+    }
   },
   plugins: [],
 };
