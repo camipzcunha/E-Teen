@@ -1,3 +1,4 @@
+import Container from "../../Components/Container";
 import HeaderLogin from "../../Components/HeaderLogin";
 import Servicos from "../../Components/Servicos";
 
@@ -44,9 +45,11 @@ export default function HomeLogin(){
     return(
         <>
             <HeaderLogin />
-            <section className="cardsRedes" >
-                <Servicos servicos={servicos} />
-            </section>
+            {
+                servicos.map((servico)=>{
+                    return(<Container servicos={servico}/>)
+                })
+            }
         </>
     )
 }

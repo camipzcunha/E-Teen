@@ -1,4 +1,3 @@
-
 import { Outlet } from 'react-router';
 
 const App = () => {
