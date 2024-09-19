@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 const Header = () => {
   const [nav, setNav] = useState(false);
 
@@ -12,26 +11,26 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-20 text-white">
       {/* Logo à esquerda */}
-      <a href='/'>
-        <h1 className="text-5xl font-modak ml-30 text-branco100">E-KIDS</h1>
+      <a href="/">
+        <h1 className="text-5xl md:text-6xl font-modak mt-5 text-branco100">E-KIDS</h1>
       </a>
 
       {/* Links em tela cheia para desktop, centralizados */}
-      <ul className="hidden md:flex justify-center flex-1 space-x-3">
-        <a href='/'>
-          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
+      <ul className="hidden md:flex justify-center flex-1 space-x-3 ">
+        <a href="#Sobre">
+          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">help_center</span>
             SOBRE
           </li>
         </a>
-        <a href='/'>
-          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
+        <a href="/">
+          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">stadia_controller</span>
             GAMES
           </li>
         </a>
-        <a href='/'>
-          <li className="hover:text-branco100 active:text-branco100 p-4 font-jost flex flex-col items-center text-branco44">
+        <a href="/">
+          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">contacts</span>
             CONTATO
           </li>
@@ -41,8 +40,9 @@ const Header = () => {
       {/* Link "Entrar" à direita para desktop */}
       <div className="hidden md:block">
         <a
-          href='/login'
-          className="bg-vermelho100 text-branco100  hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-6 py-2 rounded-md hover:bg-red-700"
+          href="/login"
+          className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-6 py-2 rounded-md"
+          style={{ transition: 'all ease-in-out 0.4s' }}
         >
           Entrar
         </a>
@@ -71,14 +71,12 @@ const Header = () => {
 
       {/* Menu lateral para mobile */}
       <div
-        className={
-          nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-gray-900 bg-preto88 ease-in-out duration-500 md:hidden'
-            : 'fixed left-[-100%]'
-        }
+        className={`${
+          nav ? 'fixed left-0 top-0 w-[60%] h-full bg-preto88 border-r border-gray-900 z-50 ease-in-out duration-500' : 'fixed left-[-100%]'
+        }`}
       >
-        <ul className="p-4 uppercase">
-          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
+        <ul className="p-4 uppercase ">
+          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44 ">
             <span className="material-symbols-outlined text-4xl mr-3">help_center</span>
             SOBRE
           </li>
@@ -92,7 +90,11 @@ const Header = () => {
           </li>
           {/* Link "Entrar" dentro do menu lateral */}
           <li className="p-5 flex flex-row items-center text-branco44">
-            <a href='/login' className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-4 py-2 rounded-md">
+            <a
+              href="/login"
+              className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-4 py-2 rounded-md"
+              style={{ transition: 'all ease-in-out 0.4s' }}
+            >
               Entrar
             </a>
           </li>

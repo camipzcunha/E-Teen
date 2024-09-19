@@ -17,6 +17,9 @@ export default {
       azul100: '#3790E1',
       amarelo100: '#F4CD00'
     },
+    boxShadow: {
+      '3xl': '0px 35px 40px -15px rgba(0, 0, 0, 0.25)',
+    },  
   },
   plugins: [],
 };
