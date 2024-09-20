@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex bg-preto88 justify-between items-center h-24 max-w-[1340px] px-20 text-white">
+    <div className="flex bg-preto88 justify-between items-center h-24 max-w-[1940px] px-20 text-white">
       {/* Logo à esquerda */}
       <a href="/">
         <h1 className="text-5xl md:text-6xl font-modak mt-5 text-branco100">E-KIDS</h1>

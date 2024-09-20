@@ -44,7 +44,7 @@ function Games({ Cards, Albu, Quz }) {
 
           <div
             ref={sectionRef}
-            className={`my-24 md:px-24 px-4 max-w-screen-2xl mx-auto transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={`my-24 md:px-24 px-8 max-w-screen-2xl mx-auto transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             id="Games"
         >
             <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
