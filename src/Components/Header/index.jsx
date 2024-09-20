@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-20 text-white">
+    <div className="flex bg-preto88 justify-between items-center h-24 max-w-[1340px] px-20 text-white">
       {/* Logo à esquerda */}
       <a href="/">
         <h1 className="text-5xl md:text-6xl font-modak mt-5 text-branco100">E-KIDS</h1>
@@ -23,14 +23,14 @@ const Header = () => {
             SOBRE
           </li>
         </a>
-        <a href="/">
+        <a href="#Games">
           <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
             <span className="material-symbols-outlined text-4xl">stadia_controller</span>
             GAMES
           </li>
         </a>
         <a href="/">
-          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
+          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44 ">
             <span className="material-symbols-outlined text-4xl">contacts</span>
             CONTATO
           </li>
@@ -49,7 +49,7 @@ const Header = () => {
       </div>
 
       {/* Ícone do Menu Hambúrguer para mobile, à direita */}
-      <div className="md:hidden flex items-center space-x-4 text-branco100">
+      <div className="md:hidden flex items-center space-x-4 text-branco100" >
         {/* Menu hambúrguer */}
         <div onClick={handleClick}>
           <svg

@@ -19,6 +19,7 @@ export default {
     },
     boxShadow: {
       '3xl': '0px 35px 40px -15px rgba(0, 0, 0, 0.25)',
+      'lg': '0px 10px 15px -3px rgba(0, 0, 0, 0.1)',
     },  
   },
   plugins: [],

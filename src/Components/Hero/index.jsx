@@ -4,8 +4,8 @@ import './hero.css'
 
 const Hero = () => {
   return (
-    <div className="relative mx-7 z-10 text-branco100">
-    <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-center mt-10 py-28 px-7">
+    <div className="relative  z-10 text-branco100 bg-preto88">
+    <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-center  py-28 px-7">
       
       {/* Texto com animação de fade-in e slide */}
       <div className="md:w-1/2 justify-between px-4">
