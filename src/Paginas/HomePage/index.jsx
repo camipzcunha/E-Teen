@@ -1,17 +1,18 @@
 import Header from "../../components/Header";
 import Hero from "../../Components/Hero";
-import About from "../../Components/Sobre";
+import Services from "../../Components/Services"
+import About from "../../Components/About";
 import Games from "../../Components/Games";
 import Contact from "../../Components/Contact";
 import React from "react";
 export default function HomePage(){
     return(
         <>
-            <Header />
             <Hero/>
-            <About/>
+            <Services/>
             <Games/>
             <Contact/>
+            <About />
            
 
         </>

@@ -1,107 +1,86 @@
-import { useState } from 'react';
+import React from 'react';
 
 const Header = () => {
-  const [nav, setNav] = useState(false);
-
-  // Função para alternar o menu
-  const handleClick = () => {
-    setNav(!nav);
-  };
-
   return (
-    <div className="flex bg-preto88 justify-between items-center h-24 max-w-[1940px] px-20 text-white">
-      {/* Logo à esquerda */}
-      <a href="/">
-        <h1 className="text-5xl md:text-6xl font-modak mt-5 text-branco100">E-KIDS</h1>
-      </a>
+    <div className="min-h-screen bg-white">
+      <style>
+        {`
+          @media only screen and (min-width: 768px) {
+            .parent:hover .child {
+              opacity: 1;
+              height: auto;
+              overflow: none;
+              transform: translateY(0);
+            }
+            .child {
+              opacity: 0;
+              height: 0;
+              overflow: hidden;
+              transform: translateY(-10%);
+            }
+          }
+        `}
+      </style>
 
-      {/* Links em tela cheia para desktop, centralizados */}
-      <ul className="hidden md:flex justify-center flex-1 space-x-3 ">
-        <a href="#Sobre">
-          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
-            <span className="material-symbols-outlined text-4xl">help_center</span>
-            SOBRE
-          </li>
-        </a>
-        <a href="#Games">
-          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44">
-            <span className="material-symbols-outlined text-4xl">stadia_controller</span>
-            GAMES
-          </li>
-        </a>
-        <a href="/">
-          <li className="hover:text-azul100 active:text-branco100 p-4 font-quantico flex flex-col items-center text-branco44 ">
-            <span className="material-symbols-outlined text-4xl">contacts</span>
-            CONTATO
-          </li>
-        </a>
-      </ul>
-
-      {/* Link "Entrar" à direita para desktop */}
-      <div className="hidden md:block">
-        <a
-          href="/login"
-          className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-6 py-2 rounded-md"
-          style={{ transition: 'all ease-in-out 0.4s' }}
-        >
-          Entrar
-        </a>
-      </div>
-
-      {/* Ícone do Menu Hambúrguer para mobile, à direita */}
-      <div className="md:hidden flex items-center space-x-4 text-branco100" >
-        {/* Menu hambúrguer */}
-        <div onClick={handleClick}>
-          <svg
-            className="w-8 h-8 text-white cursor-pointer"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+      <nav className="flex px-4 border-b md:shadow-lg items-center relative">
+        <div className="text-lg font-bold md:py-0 py-4">
+          Logo
         </div>
-      </div>
-
-      {/* Menu lateral para mobile */}
-      <div
-        className={`${
-          nav ? 'fixed left-0 top-0 w-[60%] h-full bg-preto88 border-r border-gray-900 z-50 ease-in-out duration-500' : 'fixed left-[-100%]'
-        }`}
-      >
-        <ul className="p-4 uppercase ">
-          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44 ">
-            <span className="material-symbols-outlined text-4xl mr-3">help_center</span>
-            SOBRE
+        <ul className="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
+          <li>
+            <a href="#" className="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+              <span>Home</span>
+            </a>
           </li>
-          <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
-            <span className="material-symbols-outlined text-4xl mr-3">stadia_controller</span>
-            GAMES
+          <li>
+            <a href="#" className="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+              <span>Products</span>
+            </a>
           </li>
-          <li className="p-5 flex flex-row items-center text-branco44">
-            <span className="material-symbols-outlined text-4xl mr-3">contacts</span>
-            CONTATO
+          <li className="relative parent">
+            <a href="#" className="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+              <span>Service</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+              </svg>
+            </a>
+            <ul className="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
+              <li>
+                <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                  Web development
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                  Web Design
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                  Machine Learning
+                </a>
+              </li>
+            </ul>
           </li>
-          {/* Link "Entrar" dentro do menu lateral */}
-          <li className="p-5 flex flex-row items-center text-branco44">
-            <a
-              href="/login"
-              className="bg-vermelho100 text-branco100 hover:bg-branco100 hover:text-vermelho100 font-jost uppercase px-4 py-2 rounded-md"
-              style={{ transition: 'all ease-in-out 0.4s' }}
-            >
-              Entrar
+          <li>
+            <a href="#" className="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+              <span>About us</span>
             </a>
           </li>
         </ul>
-      </div>
+        <div className="ml-auto md:hidden text-gray-500 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
+          </svg>
+        </div>
+      </nav>
+
+      <a href="https://www.buymeacoffee.com/danimai" target="_blank" rel="noopener noreferrer" className="bg-purple-600 p-2 rounded-lg text-white fixed right-0 bottom-0">
+        Support me
+      </a>
     </div>
   );
 };
 
 export default Header;
+
