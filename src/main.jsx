@@ -10,6 +10,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 //import paginas
 import HomePage from './Paginas/HomePage/index.jsx'
 import HomeLogin from './Paginas/HomeLogin/index.jsx'
+import Album from './Paginas/Album/index.jsx'
+import Loja from './Paginas/Loja/index.jsx'
 
 //import Componente
 const router = createBrowserRouter([
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
     children:[
       {index:true, element:<HomePage/>},
       {path: '/Home', element: <HomeLogin />},
+      {path: '/Album', element: <Album />},
+      {path: '/Loja', element: <Loja />},
     ]
   }
 ])
