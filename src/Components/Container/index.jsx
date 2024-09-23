@@ -1,7 +1,9 @@
 export default function Container({servicos}){
     return(
-        <div className={` h-[87px] 
-                        w-[250px]
+        
+        <div className={` relative 
+                        h-20
+                        w-64
                         border-[3px]
                       border-branco100 
                         rounded ${servicos.bgColor} 
@@ -9,11 +11,15 @@ export default function Container({servicos}){
                         flex 
                         items-center	 
                         justify-center
-                        xl:
-                        h-64
-                        w-96
+                        
+                        lg:w-96
+                        lg:h-64
+                        lg:border-[8px]
+                        lg:mt-12
+
+                        hover:bottom-3 hover:right-2
                     `} >
-            <h3 className="font-quantico font-bold text-branco100 text-cener">{servicos.titulo}</h3>
+            <h3 className="font-quantico font-bold text-branco100 text-center lg:text-3xl">{servicos.titulo}</h3>
         </div>
     )
 }
