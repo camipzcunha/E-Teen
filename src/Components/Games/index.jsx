@@ -42,7 +42,7 @@ function Games({ Cards, Albu, Quz }) {
 
     return (
 
-        <div className="relative isolate bg-black px-6 pt-14 lg:px-8">
+        <div className="relative isolate bg-black px-6 pt-14 lg:px-8" id='Games'>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -60,10 +60,10 @@ function Games({ Cards, Albu, Quz }) {
                 <div className="lg:w-1/4">
                     
                     <h3 className="text-3xl text-white font-bold font-quantico uppercase lg:w-1/2 mb-3">
-                        Confira nossos {''} <span className="text-vermelho100">Games</span>
+                        Confira nossos {''} <span className="text-red-700">Games</span>
                     </h3>
                     <p className="text-base text-white font-jost">
-                        Acesse nossa plataforma e navegue por nossos games educativos e divirta-se com a gente!
+                        Acesse nossa plataforma e navegue por nossos games educativos e divirta-se com a gente! Clique nos cards para saber mais.
                     </p>
                 </div>
                 <div className="w-full lg:w-3/4">
@@ -71,15 +71,15 @@ function Games({ Cards, Albu, Quz }) {
                         {/** Card 1 */}
                         <div
                             onClick={() => handleCardClick(1)}
-                            className={`bg-white/80 rounded-[35px] shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 1 ? 'shadow-lg scale-105' : ''}`}
+                            className={`bg-transparent shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 1 ? 'shadow-lg scale-105' : ''}`}
                         >
                             <div className="text-center">
                                 <img src={Card} alt="Álbum de cards" className="w-full h-40 mx-auto object-contain" />
-                                <h5 className="text-2xl font-semibold uppercase font-quantico px-5 text-center mt-5">
+                                <h5 className="text-2xl font-semibold uppercase font-quantico px-5 text-center mt-5 text-white">
                                     Cards
                                 </h5>
                                 <p
-                                    className={`text-sm text-gray-700 mt-3 font-jost transition-all duration-500 ${activeCard === 1 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
+                                    className={`text-sm text-gray-400 mt-3 font-jost transition-all duration-500 ${activeCard === 1 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
                                 >
                                     Descubra um mundo de coleções incríveis com nosso álbum de cards!
                                 </p>
@@ -89,17 +89,17 @@ function Games({ Cards, Albu, Quz }) {
                         {/** Card 2 */}
                         <div
                             onClick={() => handleCardClick(2)}
-                            className={`bg-white/80 rounded-[35px] shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 2 ? 'shadow-lg scale-105' :  ''}`}
+                            className={`bg-transparent rounded-[35px] shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 2 ? 'shadow-lg scale-105' :  ''}`}
                         >
                             <div className="text-center">
-                                <img src={Album} alt="Robótica" className="w-full h-40 mx-auto object-contain" />
-                                <h5 className="text-2xl font-semibold uppercase font-quantico px-5 text-center mt-5 ">
-                                    Robótica
+                                <img src={Album} alt="Guia" className="w-full h-40 mx-auto object-contain" />
+                                <h5 className="text-2xl font-semibold uppercase font-quantico px-5 text-white text-center mt-5 ">
+                                    Guia do esporte e Apostilas
                                 </h5>
                                 <p
-                                    className={`text-sm text-gray-700 mt-3 font-jost transition-all duration-500 ${activeCard === 2 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
+                                    className={`text-sm text-gray-400 mt-3 font-jost transition-all duration-500 ${activeCard === 2 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
                                 >
-                                    Explore os conceitos de robótica de forma divertida e interativa!
+                                    Aprenda mais sobre esportes e baixe nossas apostilas gratuitamente! 
                                 </p>
                             </div>
                         </div>
@@ -107,15 +107,15 @@ function Games({ Cards, Albu, Quz }) {
                         {/** Card 3 */}
                         <div
                             onClick={() => handleCardClick(3)}
-                            className={`bg-white/80 rounded-[35px] shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 3 ? 'shadow-lg scale-105' :  ''}`}
+                            className={`bg-transparent rounded-[35px] shadow-3xl p-6 flex justify-center items-center hover:scale-105 transition-transform duration-300 relative cursor-pointer ${activeCard === 3 ? 'shadow-lg scale-105' :  ''}`}
                         >
                             <div className="text-center">
                                 <img src={Quiz} alt="Quizzes" className="w-full h-40 mx-auto object-contain" />
-                                <h5 className="text-2xl font-semibold uppercase font-quantico px-5 text-center mt-5">
+                                <h5 className="text-2xl text-white font-semibold uppercase font-quantico px-5 text-center mt-5">
                                     Quizzes
                                 </h5>
                                 <p
-                                    className={`text-sm text-gray-900 mt-3 font-jost ransition-all duration-500 ${activeCard === 3 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
+                                    className={`text-sm text-gray-400 mt-3 font-jost ransition-all duration-500 ${activeCard === 3 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
                                 >
                                     Teste seus conhecimentos com nossos quizzes interativos e divertidos!
                                 </p>

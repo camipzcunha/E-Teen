@@ -2,31 +2,19 @@ import React from 'react';
 
 const Contato = () => {
     return (
-        <section className='max-width[1940px] bg-black p-12'>
+        <section className='max-width[1940px] bg-black p-12' id='Contact'>
           <div className="max-w-screen-lg mx-auto p-8 ">
             <div className="grid grid-cols-1 md:grid-cols-12 shadow-slate-600">
-                <div className="bg-red-800 md:col-span-4 p-10 text-white">
+                <div className="bg-transparent md:col-span-4 p-10 text-white">
                     <p className="mt-4 text-sm leading-7 font-regular uppercase">Contato</p>
-                    <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold font-quantico tracking-tight">
-                        Entre em <span className="text-black">Contato</span>
+                    <h3 className="text-3xl sm:text-4xl leading-normal uppercase font-extrabold font-quantico tracking-tight">
+                        Entre em <span className="uppercase text-red-600">Contato</span>
                     </h3>
-                    <p className="mt-4 leading-7 text-gray-200">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
+                    <p className="mt-4 leading-7 font-jost text-gray-200">
+                        Entre em contato conosco para obter mais informações sobre nossos serviços e produtos. Estamos disponíveis 24/7 para ajudá-lo.
                     </p>
 
-                    <ContactInfo
-                        icon={HouseIcon}
-                        text="FIAP PAULISTA - São Paulo"
-                    />
-                    <ContactInfo
-                        icon={PhoneIcon}
-                        text="+93 749 99 65 50"
-                    />
-                    <ContactInfo
-                        icon={ClockIcon}
-                        text="24/7"
-                    />
+                   
                 </div>
                 <form className="md:col-span-8 p-10">
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -87,30 +75,5 @@ const Contato = () => {
         </section>
     );
 };
-
-// ContactInfo Component
-const ContactInfo = ({ icon: Icon, text }) => (
-    <div className="flex items-center mt-5">
-        <Icon className="h-6 mr-2 text-red-600" />
-        <span className="text-sm">{text}</span>
-    </div>
-);
-
-// SVG icons (You can replace these with actual SVG components)
-const HouseIcon = () => (
-    <svg className="h-6" fill="currentColor" viewBox="0 0 489.536 489.536">
-        {/* SVG Path Here */}
-    </svg>
-);
-
-const PhoneIcon = () => (
-    <i className=''></i>
-);
-
-const ClockIcon = () => (
-    <svg className="h-6" fill="currentColor" viewBox="0 0 300.988 300.988">
-        {/* SVG Path Here */}
-    </svg>
-);
 
 export default Contato;

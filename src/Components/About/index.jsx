@@ -3,12 +3,12 @@ import React from "react";
 const About1 = () => {
   return (
     <>
-      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-black" id="About">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
-            <div className="w-full px-4 lg:w-6/12">
+            <div className="w-full px-10 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                <div className="w-full px-3 sm:px-8 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <img
                       src="https://i.ibb.co/gFb3ns6/image-1.jpg"
@@ -24,7 +24,7 @@ const About1 = () => {
                     />
                   </div>
                 </div>
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                <div className="w-full px-3 sm:px-8 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
                       src="https://i.ibb.co/9y7nYCD/image-3.jpg"
@@ -606,29 +606,28 @@ const About1 = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="w-full px-8 lg:w-1/2 xl:w-5/12 ">
               <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-lg font-semibold text-primary">
-                  Why Choose Us
+                <span className="block mb-4 text-lg text-red-600 font-semibold text-primary">
+                  Sobre nós
                 </span>
-                <h2 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
+                <h2 className="mb-5 text-3xl font-bold font-quantico text-white sm:text-[40px]/[48px]">
+                Energia e velocidade para jovens fãs de Fórmula-E!
                 </h2>
-                <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                <p className="mb-5 text-base text-gray-500 text-body-color">
+                  E-Teen é uma plataforma de aprendizado online para jovens fãs de Fórmula-E. 
+                  Nossa missão é fornecer uma experiência de aprendizado atraente e eficaz para jovens fãs de Automobilismo,
+                  com ferramentas interativas e divertidas que ensinam os fundamentos da Fórmula-E.
                 </p>
-                <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                <p className="mb-8 text-base text-gray-500 text-body-color ">
+                  A plataforma é projetada para ser usada por alunos de todas as idades e habilidades, 
+                  com uma variedade de atividades e recursos para ajudar os usuários a aprender e se divertir. 
                 </p>
                 <a
                   href="javascript:void(0)"
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                  className="inline-flex items-center justify-center py-3 font-quantico text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
                 >
-                  Get Started
+                  Fazer login
                 </a>
               </div>
             </div>
