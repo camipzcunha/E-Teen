@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-              <div className="mb-10 w-full">
+              <div className="mb-5 w-full flex flex-col lg:flex-col lg:w-full md:flex-row md:items-center md:gap-5 md:w-[100vh]">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                   <img
                     src={Capacete}

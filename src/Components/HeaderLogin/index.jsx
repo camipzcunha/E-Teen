@@ -10,41 +10,41 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-14 text-white">
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-10 md:px-14 text-white">
       {/* Logo à esquerda */}
-      <NavLink to='/'>
-        <h1 className="text-5xl font-modak ml-30 text-branco100">E-KIDS</h1>
+      <NavLink to='/home'>
+        <h1 className="text-3xl md:text-5xl font-modak ml-30 text-white ">E-KIDS</h1>
       </NavLink>
 
       {/* Links em tela cheia para desktop, centralizados */}
-      <ul className="hidden md:flex justify-center flex-1 space-x-3">
-        <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
-                <span className="material-symbols-outlined text-4xl">book_5</span> 
+      <ul className="hidden flex-1 justify-center space-x-3 md:flex">
+        <NavLink to=''>
+            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">book_5</span> 
                 GUIA
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
-                <span className="material-symbols-outlined text-4xl">quiz</span>
+        <NavLink to=''>
+            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">quiz</span>
                 QUIZZES
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
-                <span className="material-symbols-outlined text-4xl">store</span>
+        <NavLink to='/loja'>
+            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">store</span>
                 LOJA
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
-                <span className="material-symbols-outlined text-4xl">auto_stories</span>
+        <NavLink to='/album'>
+            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">auto_stories</span>
                 MEU ÁLBUM
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-4 font-jost flex flex-col items-center text-branco44 hover:text-branco100">
-                <span className="material-symbols-outlined text-4xl">group</span> 
+        <NavLink to=''>
+            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">group</span> 
                 AMIGOS
             </li>
         </NavLink>
@@ -52,16 +52,16 @@ const Header = () => {
 
       {/* Botão "Entrar" à direita */}
       <div className="hidden md:block">
-        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-6 py-2 rounded-md hover:bg-vermelho100-700  ">
-          Entrar
+        <button className="bg-[#F32626] text-white font-jost uppercase px-3 py-1 rounded-full hover:bg-[#F32626]-700 md:py-1/2 md:px-2 ">
+         <span className="material-symbols-outlined text-4xl">person</span>
         </button>
       </div>
 
       {/* Ícone do Menu Hambúrguer para mobile, à direita */}
-      <div className="md:hidden flex items-center space-x-4 text-branco100">
+      <div className="md:hidden flex items-center space-x-4 text-white">
         {/* Botão "Entrar" para mobile */} 
-        <button className="bg-vermelho100 text-branco100 font-jost uppercase px-4 py-2 rounded-md">
-          Entrar
+        <button className="bg-[#F32626] text-white font-jost uppercase px-3 py-1 rounded-full hover:bg-[#F32626]-700 md:py-1/2 md:px-2">
+          <span className="material-symbols-outlined text-2xl">person</span>
         </button>
 
         {/* Menu hambúrguer */}
@@ -87,37 +87,37 @@ const Header = () => {
       <div
         className={
           nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-gray-900 bg-preto88 ease-in-out duration-500 md:hidden'
+            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-gray-900 bg-black ease-in-out duration-500 md:hidden'
             : 'fixed left-[-100%]'
         }
       >
         <ul className="p-4 uppercase">
-        <NavLink to='/'>
-          <li className="p-5 border-b border-gray-600 flex flex-row items-center  text-branco44">
+        <NavLink to=''>
+          <li className="p-5 border-b border-gray-600 flex flex-row items-center">
                 <span className="material-symbols-outlined text-4xl mr-3">book_5</span> 
                 GUIA
           </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-5 border-b border-gray-600 flex flex-row items-center  text-branco44">
+        <NavLink to=''>
+            <li className="p-5 border-b border-gray-600 flex flex-row items-center">
                 <span className="material-symbols-outlined text-4xl mr-3">quiz</span>
                 QUIZZES
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-5 border-b border-gray-600 flex flex-row items-center text-branco44">
+        <NavLink to='/loja'>
+            <li className="p-5 border-b border-gray-600 flex flex-row items-center">
                 <span className="material-symbols-outlined text-4xl mr-3" >store</span>
                 LOJA
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-5 border-b border-gray-600 flex flex-row items-center  text-branco44">
+        <NavLink to='/album'>
+            <li className="p-5 border-b border-gray-600 flex flex-row items-center">
                 <span className="material-symbols-outlined text-4xl mr-3">auto_stories</span>
                 MEU ÁLBUM
             </li>
         </NavLink>
-        <NavLink to='/'>
-            <li className="p-5 flex flex-row items-center  text-branco44">
+        <NavLink to=''>
+            <li className="p-5 flex flex-row items-center">
                 <span className="material-symbols-outlined text-4xl mr-3">group</span> 
                 AMIGOS
             </li>
