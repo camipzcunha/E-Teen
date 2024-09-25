@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import './style.css';
 import Figurinha from '../../Components/Figurinha/Figurinha';
 import HeaderLogin from '../../Components/HeaderLogin'

@@ -1,3 +1,5 @@
+import ServiceContainer from "./ServiceContainer";'./ServiceContainer';
+
 const Services = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen[1940px]  md:px-24 lg:px-8 lg:py-20 bg-black" id="Services">
@@ -41,168 +43,42 @@ const Services = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-10 mt-10">
-     <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    
 
-    <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    <ServiceContainer
+      title="Quizzes e Desafios Interativos"
+      description="Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes."
+    />
 
- <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    <ServiceContainer
+      title="Aulas Online"
+      description="Aprenda sobre a Fórmula-E com aulas online ministradas por especialistas no assunto. 
+      As aulas são interativas e divertidas, e você pode acessá-las de qualquer lugar."
+    />
 
-     <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    <ServiceContainer
+      title="Eventos Especiais"
+      description="Participe de eventos especiais da Fórmula-E, como corridas ao vivo, entrevistas com pilotos e 
+      sessões de perguntas e respostas. Conheça outros fãs e compartilhe sua paixão pelo esporte."
+    />
 
-     <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    <ServiceContainer
+      title="Conteúdo Exclusivo"
+      description="Tenha acesso a conteúdo exclusivo da Fórmula-E, como vídeos dos bastidores das corridas, 
+      entrevistas com pilotos e equipes, e análises dos eventos. Fique por dentro de tudo o que acontece no mundo da Fórmula-E."
+    />
 
-     <div className="flex gap-4 items-start">
-      <span className="text-red-600 bg-violet-500/10 p-3 rounded-full">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H5.50002C5.50002 5.27613 5.27617 5.49998 5.00002 5.49998H4.00002C3.72387 5.49998 3.50002 5.27613 3.50002 4.99998H0.900024C0.402966 4.99998 0 5.40294 0 5.89999V13.1C0 13.597 0.402966 14 0.900024 14H13.1C13.5971 14 14 13.597 14 13.1V5.89999C14 5.40294 13.5971 4.99998 13.1 4.99998H9.50002ZM4.00002 9.99999H5.00002V8.99999H4.00002V9.99999ZM3.00002 9.99999V8.99999H1.00002V9.99999H3.00002ZM1.00002 7.99999V6.99999H3.00002V7.99999H1.00002ZM5.00002 7.99999H4.00002V6.99999H5.00002V7.99999ZM10.0001 9.99999H11.0001V8.99999H10.0001V9.99999ZM9.00009 9.99999V8.99999H7.00009V9.99999H9.00009ZM7.00009 7.99999H9.00009V6.99999H7.00009V7.99999ZM11.0001 7.99999H10.0001V6.99999H11.0001V7.99999Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-      <div>
-        <h3 className="font-semibold text-white font-quantico text-xl">Jogos e Desafios Interativos</h3>
-        <p className="mt-1 text-gray-500">
-          Participe de jogos online que testam seu conhecimento sobre a Fórmula-E. 
-          Ganhe prêmios virtuais e cards colecionáveis ao completar desafios e responder quizzes.
-        </p>
-      </div>
-    </div>
+    <ServiceContainer
+      title="Comunidade Online"
+      description="Faça parte de uma comunidade online de fãs da Fórmula-E. Conheça outros fãs, compartilhe sua paixão pelo esporte, 
+      e participe de discussões e debates sobre as corridas e os pilotos. Faça novos amigos e divirta-se com pessoas que compartilham seus interesses."
+    />
 
+    <ServiceContainer
+      title="Produtos Exclusivos"
+      description="Adquira produtos exclusivos da Fórmula-E, como camisetas, bonés, canecas, e muito mais. 
+      Mostre seu apoio ao esporte e à sua equipe favorita com produtos oficiais e licenciados da Fórmula-E."
+    />
 
   </div>
 </div>

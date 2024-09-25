@@ -1,4 +1,4 @@
-import React from "react";
+
 import Capacete from "../../assets/capacete.png";
 
 const Footer = () => {
@@ -57,25 +57,24 @@ const Footer = () => {
               </div>
             </div>
 
-            <LinkGroup header="Resources">
-              <NavLink link="/#" label="SaaS Development" />
-              <NavLink link="/#" label="Our Products" />
-              <NavLink link="/#" label="User Flow" />
-              <NavLink link="/#" label="User Strategy" />
-            </LinkGroup>
-            <LinkGroup header="Company">
-              <NavLink link="/#" label="About TailGrids" />
-              <NavLink link="/#" label="Contact & Support" />
-              <NavLink link="/#" label="Success History" />
-              <NavLink link="/#" label="Setting & Privacy" />
-            </LinkGroup>
-            <LinkGroup header="Quick Links">
-              <NavLink link="/#" label="Premium Support" />
-              <NavLink link="/#" label="Our Services" />
-              <NavLink link="/#" label="Know Our Team" />
-              <NavLink link="/#" label="Download App" />
-            </LinkGroup>
-
+            <LinkGroup header="Fórmula-E">
+    <NavLink link="/#" label="Desenvolvimento de Jogos" />
+    <NavLink link="/#" label="Nossos Produtos" />
+    <NavLink link="/#" label="Fluxo de Usuário" />
+    <NavLink link="/#" label="Estratégia do Usuário" />
+  </LinkGroup>
+  <LinkGroup header="Empresa">
+    <NavLink link="/#" label="Sobre Nós" />
+    <NavLink link="/#" label="Contato e Suporte" />
+    <NavLink link="/#" label="História de Sucesso" />
+    <NavLink link="/#" label="Configurações e Privacidade" />
+  </LinkGroup>
+  <LinkGroup header="Links Rápidos">
+    <NavLink link="/#" label="Suporte Premium" />
+    <NavLink link="/#" label="Nossos Serviços" />
+    <NavLink link="/#" label="Conheça Nossa Equipe" />
+    <NavLink link="/#" label="Baixe o App" />
+  </LinkGroup>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
                 <h4 className="mb-9 text-lg font-semibold text-white">
