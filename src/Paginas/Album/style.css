@@ -12,20 +12,6 @@
    /* Evita rolagem horizontal */
 }
 
-html, body {
-  font-family: "Quantico", sans-serif;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-width: 100%; 
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-
 .posicao5 { grid-row: 1 ; grid-column: 1; }
 .posicao6 { grid-row: 1 ; grid-column: 2; }
 .posicao7 { grid-row: 2 ; grid-column: 1; }
