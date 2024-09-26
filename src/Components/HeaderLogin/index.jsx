@@ -13,38 +13,38 @@ const Header = () => {
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto mt-3 px-10 md:px-14 text-white">
       {/* Logo à esquerda */}
       <NavLink to='/home'>
-        <h1 className="text-3xl md:text-5xl font-modak ml-30 text-white ">E-KIDS</h1>
+        <h1 className="text-3xl md:text-4xl font-modak ml-30 text-white ">E-TEEN</h1>
       </NavLink>
 
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden flex-1 justify-center space-x-3 md:flex">
         <NavLink to=''>
-            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">book_5</span> 
+            <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">book_5</span> 
                 GUIA
             </li>
         </NavLink>
         <NavLink to=''>
-            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">quiz</span>
+            <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">quiz</span>
                 QUIZZES
             </li>
         </NavLink>
         <NavLink to='/loja'>
-            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">store</span>
+            <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">store</span>
                 LOJA
             </li>
         </NavLink>
         <NavLink to='/album'>
-            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">auto_stories</span>
+            <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">auto_stories</span>
                 MEU ÁLBUM
             </li>
         </NavLink>
         <NavLink to=''>
-            <li className="p-4 font-jost flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-5xl">group</span> 
+            <li className="p-4  flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base font-quantico">
+                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">group</span> 
                 AMIGOS
             </li>
         </NavLink>
@@ -53,7 +53,7 @@ const Header = () => {
       {/* Botão "Entrar" à direita */}
       <div className="hidden md:block">
         <button className="bg-[#F32626] text-white font-jost uppercase px-3 py-1 rounded-full hover:bg-[#F32626]-700 md:py-1/2 md:px-2 ">
-         <span className="material-symbols-outlined text-4xl">person</span>
+         <span className="material-symbols-outlined text-3xl">person</span>
         </button>
       </div>
 
@@ -87,8 +87,8 @@ const Header = () => {
       <div
         className={
           nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-gray-900 bg-black ease-in-out duration-500 md:hidden'
-            : 'fixed left-[-100%]'
+            ? 'fixed right-0 top-0 w-[60%] h-full border-r border-gray-900 bg-black ease-in-out duration-500 md:hidden'
+            : 'fixed right-[-100%]'
         }
       >
         <ul className="p-4 uppercase">
