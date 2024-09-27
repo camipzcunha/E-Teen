@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css/?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    background-color: #000; /* Define a tela como preta */
+}
+section {
+    background-color: #000; /* Define a seção como preta */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+* {
+    box-sizing: border-box ;
+    font-family: 'Quantico', sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(225deg,#4b0909, #0c0101); */ 
+    /* z-index: 1; */
+    /* mix-blend-mode: screen; */
+}
+section .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentBx{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 150%;
+    height: 100%;
+}
+section .contentBx .formBx{
+    width: 50%;
+
+}
+
+section .contentBx .formBx h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+    border-bottom: 4px solid rgb(223, 223, 223);
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: rgb(206, 204, 204);
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+section .contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid rgb(247, 247, 247);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(241, 241, 241);
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"] {
+    background: rgb(179, 178, 178);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
+    background: rgb(35, 35, 36);
+}
+
+section .contentBx .formBx .remember {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section .contentBx .formBx .inputBx p {
+    color: rgb(245, 242, 242);
+}
+section .contentBx .formBx .inputBx p a {
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    section .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentBx .formBx {
+        width: 100%;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.9); /* Altere o fundo para preto transparente */
+        margin: 50px;
+    }
+    section .contentBx .formBx h3{
+        color: #fff;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+}
+

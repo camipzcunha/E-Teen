@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { NavLink } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -43,9 +44,11 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <NavLink to='/Login'>
             <a href="#" className="text-sm font-semibold font-quantico uppercase leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
+            </NavLink>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
