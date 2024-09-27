@@ -40,7 +40,7 @@ export default function Loja(){
     ];
 
     var moedas = 500
-
+   
     return(
         <>
             <HeaderLogin />

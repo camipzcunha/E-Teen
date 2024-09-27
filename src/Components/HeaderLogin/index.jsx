@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import {useState} from "react";
 import { NavLink } from 'react-router-dom';
-
-const Header = () => {
+const HeaderLogin = () => {
   const [nav, setNav] = useState(false);
 
   // Função para alternar o menu
@@ -128,4 +127,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderLogin;
