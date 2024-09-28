@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Ensure react-router-dom is installed
-import ImgFundo from './img1.avif';
+import ImgFundo from './login2.jpg';
 
 function FormLogin() {
     const [isRegister, setIsRegister] = useState(false);
@@ -23,8 +23,8 @@ function FormLogin() {
                         Voltar para a Home
                     </Link>
                     
-                    <h2 className="text-white text-2xl font-semibold mb-6 border-b-4 border-gray-300 uppercase text-center">
-                        {isRegister ? 'Cadastro' : 'Logar'}
+                    <h2 className="text-white text-3xl font-semibold mb-6 border-b-4 border-gray-300 uppercase text-center font-quantico">
+                        {isRegister ? 'Cadastro - E-TEEN' : 'Logar - E-TEEN'}
                     </h2>
                     
                     {/* Formulário de Login (Left Side) */}
@@ -54,7 +54,9 @@ function FormLogin() {
                                     </label>
                                 </div>
                                 <div className="mb-4">
+                                    <Link to='/home'>
                                     <button type="submit" className="w-full bg-red-800 text-white rounded-full py-2 hover:bg-red-700"> Logar </button>
+                                    </Link>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-gray-300">
@@ -103,7 +105,9 @@ function FormLogin() {
                                     />
                                 </div>
                                 <div className="mb-4">
+                                    <Link to = '/Home'>
                                     <button type="submit" className="w-full bg-red-800 text-white rounded-full py-2 hover:bg-red-700">Inscreva-se</button>
+                                    </Link>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-gray-300">

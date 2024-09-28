@@ -19,31 +19,31 @@ const HeaderLogin = () => {
       <ul className="hidden flex-1 justify-center space-x-3 md:flex">
         <NavLink to=''>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">book_5</span> 
+                <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">book_5</span> 
                 GUIA
             </li>
         </NavLink>
         <NavLink to=''>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">quiz</span>
+                <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">quiz</span>
                 QUIZZES
             </li>
         </NavLink>
         <NavLink to='/loja'>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">store</span>
+                <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">store</span>
                 LOJA
             </li>
         </NavLink>
         <NavLink to='/album'>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">auto_stories</span>
+                <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">auto_stories</span>
                 MEU ÁLBUM
             </li>
         </NavLink>
         <NavLink to=''>
             <li className="p-4  flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base font-quantico">
-                <span className="material-symbols-outlined text-slate-300 text-4xl hover:text-white lg:text-3xl">group</span> 
+                <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">group</span> 
                 AMIGOS
             </li>
         </NavLink>
