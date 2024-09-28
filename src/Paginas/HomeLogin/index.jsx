@@ -27,7 +27,7 @@ export default function HomeLogin(){
         {
             id: '04',
             titulo: 'QUIZZES',
-            bgColor: 'bg-vermelho100'
+            bgColor: 'bg-vermelho100',
             // fundo:
             link:'/Quizzes'
         },
@@ -41,7 +41,7 @@ export default function HomeLogin(){
         {
             id: '01',
             titulo: 'AMIGOS',
-            bgColor: 'bg-amarelo100'
+            bgColor: 'bg-amarelo100',
             // fundo:
             link: '/Amigos'
         },

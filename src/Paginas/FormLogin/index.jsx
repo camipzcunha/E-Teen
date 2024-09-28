@@ -1,80 +1,126 @@
-import React from 'react';
-import ImgFundo from './imagem.gif';
-import './style.css';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Ensure react-router-dom is installed
+import ImgFundo from './img1.avif';
 
 function FormLogin() {
+    const [isRegister, setIsRegister] = useState(false);
 
-    function showRegisterForm() {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('registerForm').style.display = 'block';
-        document.getElementById('formTitle').innerText = 'Cadastro'; 
-    }
-    
-    function showLoginForm() {
-        document.getElementById('loginForm').style.display = 'block';
-        document.getElementById('registerForm').style.display = 'none';
-        document.getElementById('formTitle').innerText = 'Logar'; 
-    }
+    const toggleForm = () => {
+        setIsRegister(!isRegister);
+    };
 
     return (
-        <section>
-            <div className="imgBx">
-                <img src={ImgFundo} alt="imagem gif" />
-            </div>
-            <div className="contentBx">
-                <div className="formBx">
-                    <h2 id="formTitle">Logar</h2>
-
-                    {/* Formulário de Login */}
-                    <form id="loginForm">
-                        <div className="inputBx">
-                            <span>Usuário</span>
-                            <input type="text" name="username" />
-                        </div>
-                        <div className="inputBx">
-                            <span>Senha</span>
-                            <input type="password" name="password" />
-                        </div>
-                        <div className="remember">
-                            <label>
-                                <input type="checkbox" name="remember" /> Lembrar da senha futuramente
-                            </label>
-                        </div>
-                        <div className="inputBx">
-                            <input type="submit" value="Logar" />
-                        </div>
-                        <div className="inputBx">
-                            <p>
-                                Não tem uma conta? <a href="#" onClick={showRegisterForm}>Inscreva-se</a>
-                            </p>
-                        </div>
-                    </form>
-
-                    {/* Formulário de Cadastro */}
-                    <form id="registerForm" style={{ display: 'none' }}>
-                        <div className="inputBx">
-                            <span>Crie um nome de usuário</span>
-                            <input type="text" name="newUsername" />
-                        </div>
-                        <div className="inputBx">
-                            <span>Crie uma senha</span>
-                            <input type="password" name="newPassword" />
-                        </div>
-                        <div className="inputBx">
-                            <span>Confirme a senha</span>
-                            <input type="password" name="confirmPassword" />
-                        </div>
-                        <div className="inputBx">
-                            <input type="submit" value="Inscreva-se" />
-                        </div>
-                        <div className="inputBx">
-                            <p>
-                                Já tem uma conta? <a href="#" onClick={showLoginForm}>Logar</a>
-                            </p>
-                        </div>
-                    </form>
+        <section className="flex min-h-screen bg-black relative">
+            {/* Background image for larger screens */}
+            <div 
+                className="hidden md:block w-full bg-cover " 
+                style={{ backgroundImage: `url(${ImgFundo})`, opacity: 0.9 }}
+            />
+            <div className="flex items-center justify-center w-full p-4 md:p-8 relative z-10">
+                <div className="w-full max-w-md bg-black bg-opacity-90 rounded-lg shadow-lg p-6 transition-all duration-300">
+                    {/* Navigation Link to Homepage */}
+                    <Link to="/" className="text-gray-400 mb-4 inline-block  hover:underline">
+                        Voltar para a Home
+                    </Link>
+                    
+                    <h2 className="text-white text-2xl font-semibold mb-6 border-b-4 border-gray-300 uppercase text-center">
+                        {isRegister ? 'Cadastro' : 'Logar'}
+                    </h2>
+                    
+                    {/* Formulário de Login (Left Side) */}
+                    <div className={`transition-opacity duration-300 ${isRegister ? 'opacity-0' : 'opacity-100'}`}>
+                        {!isRegister && (
+                            <form>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Usuário</label>
+                                    <input 
+                                        type="text" 
+                                        name="username" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Senha</label>
+                                    <input 
+                                        type="password" 
+                                        name="password" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4 text-white">
+                                    <label className="inline-flex items-center">
+                                        <input type="checkbox" name="remember" className="mr-2" />
+                                        Lembrar da senha futuramente
+                                    </label>
+                                </div>
+                                <div className="mb-4">
+                                    <button type="submit" className="w-full bg-red-800 text-white rounded-full py-2 hover:bg-red-700"> Logar </button>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-gray-300">
+                                        Não tem uma conta?  
+                                        <button type="button" onClick={toggleForm} className="text-white hover:underline ml-2"> Inscreva-se </button>
+                                    </p>
+                                </div>
+                            </form>
+                        )}
+                    </div>
+                    
+                    {/* Formulário de Cadastro (Right Side) */}
+                    <div className={`transition-opacity duration-300 ${isRegister ? 'opacity-100' : 'opacity-0'}`}>
+                        {isRegister && (
+                            <form>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Coloque seu e-mail</label>
+                                    <input 
+                                        type="text" 
+                                        name="newEmail" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Crie um nome de usuário</label>
+                                    <input 
+                                        type="text" 
+                                        name="newUsername" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Crie uma senha</label>
+                                    <input 
+                                        type="password" 
+                                        name="newPassword" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-400 mb-1">Confirme a senha</label>
+                                    <input 
+                                        type="password" 
+                                        name="confirmPassword" 
+                                        className="w-full p-3 border border-gray-300 rounded-full bg-transparent text-white outline-none" 
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <button type="submit" className="w-full bg-red-800 text-white rounded-full py-2 hover:bg-red-700">Inscreva-se</button>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-gray-300">
+                                        Já tem uma conta? 
+                                        <button type="button" onClick={toggleForm} className="text-white hover:underline ml-2"> Logar</button>
+                                    </p>
+                                </div>
+                            </form>
+                        )}
+                    </div>
                 </div>
             </div>
+            {/* Background image for mobile devices */}
+            <div 
+                className="md:hidden absolute inset-0 bg-cover bg-center" 
+                style={{ backgroundImage: `url(${ImgFundo})`, opacity: 0.3 }}
+            />
         </section>
     );
 }

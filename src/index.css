@@ -6,7 +6,6 @@
 html, body {
     font-family: "Quantico", sans-serif;
     background-color: #000;
-    display: flex;
     justify-content: center;
     width: 100%;
     min-width: 100%; 

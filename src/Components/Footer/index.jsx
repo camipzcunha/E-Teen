@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
                 <h4 className="mb-9 text-lg font-semibold text-white">
-                  Follow Us On
+                  Siga-nos em
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
@@ -135,7 +135,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-base text-white">
-                  &copy; 2025 TailGrids
+                  &copy; 2025 E-TEEN. Todos os direitos reservados.
                 </p>
               </div>
             </div>
