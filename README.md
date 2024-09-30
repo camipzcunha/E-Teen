@@ -36,7 +36,7 @@ Siga os passos abaixo para rodar o projeto localmente:
    
 2. **Navegue até o repositório do Projeto**
    ```bash
-  cd E-teen
+   cd E-teen
 
 4. **Instale as dependências:**
     ```bash
@@ -46,7 +46,8 @@ Siga os passos abaixo para rodar o projeto localmente:
     ```bash
    npm run dev
     
-   Normalmente, o projeto será aberto no endereço http://localhost:5173.
+
+     Normalmente, o projeto será aberto no endereço http://localhost:5173.
 
 ## Equipe de Desenvolvimento
 
