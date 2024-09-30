@@ -1,4 +1,7 @@
 import React from "react";
+import Teens from "../../Assets/teens-about.jpg";
+import Car from "../../Assets/car-about.jpg";
+import Teenst from "../../Assets/teentech-about.jpg";
 
 const About1 = () => {
   return (
@@ -11,15 +14,14 @@ const About1 = () => {
                 <div className="w-full px-3 sm:px-8 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
-                      alt=""
+                      src={Teens}
+                      alt="Grupo de jovens fãs de Fórmula-E"
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
-                      alt=""
+                      src={Car}                      alt=" Carro de Fórmula-E"
                       className="w-full rounded-2xl"
                     />
                   </div>
@@ -27,8 +29,8 @@ const About1 = () => {
                 <div className="w-full px-3 sm:px-8 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
-                      alt=""
+                      src={Teenst}
+                      alt=" Jovens navegando por internet"
                       className="w-full rounded-2xl"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">

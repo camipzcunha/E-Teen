@@ -86,10 +86,12 @@ const HeaderLogin = () => {
       <div
         className={
           nav
-            ? 'fixed right-0 top-0 w-[60%] h-full border-r border-gray-900 bg-black ease-in-out duration-500 md:hidden'
+            ? 'fixed right-0 top-0 w-[60%] h-full border-r border-gray-900 bg-black z-10 ease-in-out duration-500 md:hidden'
             : 'fixed right-[-100%]'
+                    
         }
       >
+       
         <ul className="p-4 uppercase">
         <NavLink to=''>
           <li className="p-5 border-b border-gray-600 flex flex-row items-center">
@@ -122,6 +124,13 @@ const HeaderLogin = () => {
             </li>
         </NavLink>
         </ul>
+        <button
+                type="button"
+                onClick={handleClick}
+                className="-m-2.5 rounded-md p-2."
+              >
+                <span className=" text-white bg-[#F32626] p-3 m-8">Fechar menu</span>
+              </button>
       </div>
     </div>
   );

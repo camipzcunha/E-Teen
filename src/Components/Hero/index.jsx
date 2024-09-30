@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -125,12 +125,13 @@ export default function Hero() {
               Experimente o automobilismo elétrico como nunca antes. Participe da plataforma de fórmula-E para jovens mais emocionante do mundo.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Link to='/Login'>
               <a
-                href="#"
                 className="rounded-md font-quantico uppercase bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
-                Criar conta
+                Acesse sua Conta
               </a>
+              </Link>
               <a href="#" className="text-sm font-quantico font-semibold leading-6 text-white">
                 Leia mais <span aria-hidden="true">→</span>
               </a>
