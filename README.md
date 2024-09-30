@@ -6,6 +6,7 @@
 
 - **React Vite**: Framework para desenvolvimento rápido e moderno de aplicações web.
 - **Tailwind CSS**: Biblioteca de estilos utilitária para construir interfaces de forma ágil e personalizável.
+- **Node.js**: Ambiente de execução para código JavaScript no backend.
 
 ## Páginas Disponíveis
 
@@ -24,6 +25,24 @@ Atualmente, as seguintes páginas estão disponíveis para acesso:
 ## Em Desenvolvimento
 
 Estamos trabalhando em novas funcionalidades para tornar a plataforma mais completa e interativa. Fique atento para futuras atualizações!
+
+## Como Iniciar o Projeto
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/e-teen.git
+   
+2. **Navegue até o repositório do Projeto**
+  cd E-teen
+
+3. **Instale as dependências:**
+   npm install
+
+4. **Execute o projeto**
+   npm run dev
+   Normalmente, o projeto será aberto no endereço http://localhost:5173.
 
 ## Equipe de Desenvolvimento
 
