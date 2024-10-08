@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
-import Card from '../../assets/cards.png';
-import Album from '../../assets/álbum.png';
-import Quiz from '../../assets/card-pil.png';
+import Quiz from '/card-pil.png';
+import Card from '/cards.png';
+import { useEffect, useRef, useState } from 'react';
+import Album from '/álbum.png';
 
 function Games() {
   const [isVisible, setIsVisible] = useState(false);
@@ -97,7 +97,7 @@ function Games() {
               <p
                 className={`text-sm text-gray-400 mt-3 font-jost transition-all duration-500 ${activeCard === 2 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}
               >
-                Aprenda mais sobre esportes e baixe nossas apostilas gratuitamente! 
+                Aprenda mais sobre esportes e baixe nossas apostilas gratuitamente!
               </p>
             </div>
           </div>
@@ -119,7 +119,7 @@ function Games() {
               </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
