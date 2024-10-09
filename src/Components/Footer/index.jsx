@@ -13,11 +13,6 @@ const Footer = () => {
                   <img
                     src={Capacete}
                     alt="logo"
-                    className="max-w-full "
-                  />
-                  <img
-                    src={Capacete}
-                    alt="logo"
                     className="max-w-full hidden dark:block"
                   />
                 </a>
