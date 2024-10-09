@@ -1,7 +1,7 @@
 import React from "react";
-import Teens from "../../Assets/teens-about.jpg";
-import Car from "../../Assets/car-about.jpg";
-import Teenst from "../../Assets/teentech-about.jpg";
+import Teens from "/Assets/teens-about.jpg";
+import Car from "/Assets/car-about.jpg";
+import Teenst from "/Assets/teentech-about.jpg";
 
 const About1 = () => {
   return (

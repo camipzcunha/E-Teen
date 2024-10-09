@@ -1,7 +1,7 @@
-import Quiz from '/card-pil.png';
-import Card from '/cards.png';
+import Quiz from '/Assets/card-pil.png';
+import Card from '/Assets/cards.png';
 import { useEffect, useRef, useState } from 'react';
-import Album from '/álbum.png';
+import Album from '/Assets/album.png';
 
 function Games() {
   const [isVisible, setIsVisible] = useState(false);

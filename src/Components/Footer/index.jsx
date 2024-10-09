@@ -1,5 +1,5 @@
 
-import Capacete from "../../assets/capacete.png";
+import Capacete from "/Assets/capacete.png";
 
 const Footer = () => {
   return (
