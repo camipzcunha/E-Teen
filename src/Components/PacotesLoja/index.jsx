@@ -1,34 +1,50 @@
+import { useState } from 'react';
 
-export default function PacotesLoja({dados}){
+export default function PacotesLoja({ dados, moedasAtuais, atualizarMoedas }) {
+    const [moedasUsuario, setMoedasUsuario] = useState(moedasAtuais);
+
+    const comprarPacote = (moedasPacote) => {
+        if (moedasUsuario >= moedasPacote) {
+            setMoedasUsuario(moedasUsuario - moedasPacote); // Subtrai as moedas
+            atualizarMoedas(moedasUsuario - moedasPacote);  // Atualiza o estado no componente pai, se necessário
+            alert('Compra realizada com sucesso!');
+        } else {
+            alert('Moedas insuficientes!');
+        }
+    };
+
     return (
         <>
-        {
-            dados.map(({id,tipo,qtd,moedas, img}, indice)=>(
+            {dados.map(({ id, tipo, qtd, moedas, img }, indice) => (
                 <div key={indice}>
-                    <div className="bg-[#EAEAEA] rounded-[2px]
+                    <div
+                        className="bg-[#EAEAEA] rounded-[2px]
                                     w-[80%] h-[50vh] mx-[10%] mt-10
-                                    md:h-[35vh]"><img className='w-full h-full' src={img} alt="pacFig" /></div>
-                    
-                    <div className="flex justify-center items-center
-                                    mt-2">
-                        <p className="text-white
-                                    w-[50%] text-[18px]
-                                    lg:text-[16x]">{qtd} Pacotes</p>
-                        <div className="flex justify-center items-center text-white
-                                        mr-1">
+                                    md:h-[35vh]">
+                        <img className='w-full h-full' src={img} alt="pacFig" />
+                    </div>
+
+                    <div className="flex justify-center items-center mt-2">
+                        <p className="text-white w-[50%] text-[18px] lg:text-[16x]">
+                            {qtd} Pacotes
+                        </p>
+                        <div className="flex justify-center items-center text-white mr-1">
                             <span className='text-[#F4CD00] material-symbols-outlined'>paid</span>
-                            <p className="text-[20px] text-[#F4CD00] lg:text-[18px]">{moedas}</p>
+                            <p className="text-[20px] text-[#F4CD00] lg:text-[18px]">
+                                {moedas}
+                            </p>
                         </div>
                     </div>
-                    <button className="bg-[#F32626] text-white rounded-lg cursor-pointer
-                                        ml-[10%] mt-2 px-8 py-2
-                                        md:w-[15vw] md:px-3
-                                        lg:w-[20vh] lg:h-[6vh] lg:py-0">COMPRAR</button>
+                    <button
+                        onClick={() => comprarPacote(moedas)}  // Chama a função ao clicar no botão
+                        className="bg-[#F32626] text-white rounded-lg cursor-pointer
+                                    ml-[10%] mt-2 px-8 py-2
+                                    md:w-[15vw] md:px-3
+                                    lg:w-[20vh] lg:h-[6vh] lg:py-0">
+                        COMPRAR
+                    </button>
                 </div>
-            ))
-        }
+            ))}
         </>
-        
-        
-    )
+    );
 }
