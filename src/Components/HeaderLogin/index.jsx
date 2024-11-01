@@ -17,13 +17,13 @@ const HeaderLogin = () => {
 
       {/* Links em tela cheia para desktop, centralizados */}
       <ul className="hidden flex-1 justify-center space-x-3 md:flex">
-        <NavLink to=''>
+        <NavLink to='/guia'>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
                 <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">book_5</span> 
                 GUIA
             </li>
         </NavLink>
-        <NavLink to=''>
+        <NavLink to='/quizzes'>
             <li className="p-4 font-quantico flex flex-col items-center text-slate-300 hover:text-white md:text-xs lg:text-base">
                 <span className="material-symbols-outlined text-slate-300 text-3xl hover:text-white lg:text-2xl">quiz</span>
                 QUIZZES

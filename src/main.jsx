@@ -13,7 +13,9 @@ import FormLogin from './Paginas/FormLogin/index.jsx'
 import HomeLogin from './Paginas/HomeLogin/index.jsx'
 import HomePage from './Paginas/HomePage/index.jsx'
 import Loja from './Paginas/Loja/index.jsx'
+import Guia from './Paginas/Guia'
 import Roleta from './Paginas/Roleta/index.jsx'
+import Quizzes from './Paginas/Quizzes'
 
 //import Componente
 const router = createBrowserRouter([
@@ -26,7 +28,9 @@ const router = createBrowserRouter([
       { path: '/Home', element: <HomeLogin /> },
       { path: '/Album', element: <Album /> },
       { path: '/Loja', element: <Loja /> },
-      { path: '/Roleta', element: <Roleta /> }
+      { path: '/Roleta', element: <Roleta /> },
+      { path: '/Guia', element: <Guia />},
+      { path: '/Quizzes', element: <Quizzes />}
     ]
   }
 ])
